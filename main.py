@@ -1,10 +1,9 @@
+from stats import number_of_words_in_book
+
+
 def get_book_text(path_to_file):
     with open(path_to_file, "r", encoding="utf-8") as f:
         return f.read()
-
-
-def number_of_words_in_book(book):
-    return len(book.split())
 
 
 def main():
